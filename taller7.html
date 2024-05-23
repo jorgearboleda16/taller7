@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario con Tabla del Taller 7</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Formulario</h2>
+        <form id="formulario">
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control" id="fecha">
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select class="form-control" id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="agregarFila()">Agregar</button>
+        </form>
+
+        <h3 class="mt-5">Datos llenados</h3>
+        <table class="table table-bordered mt-3" id="tablaDatos">
+            <thead>
+                <tr>
+                    <th>Nombre y Apellido</th>
+                    <th>Email</th>
+                    <th>Edad</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Género</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se agregarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
